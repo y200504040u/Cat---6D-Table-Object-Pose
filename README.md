@@ -52,7 +52,7 @@ topic: 'aimo/rgbd_obj_cls_pose'
 
 	pose    ：四元数，其本地坐标系的定义如下图
 
-	![image](1.jpg)
+![image](1.jpg)
 	
 (3) 未检测到支持的物体：
 
