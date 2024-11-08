@@ -39,16 +39,23 @@ topic: 'aimo/rgbd_obj_cls_pose'
 目前仅支持其中4个物体：apple(苹果)、orange(橙子)、mouse(鼠标)、watering_can(喷壶)
 
 (1) apple和orange
+
 	可近似为半径为4cm的球, 所以仅有position, 没有pose
+
 	position：形心
+
 	pose    ：在输出中用0占位，即a=b=c=d=0.0
 
 (2) mouse和watering_can
+
 	position：底面中心，也是物体本地坐标系的原点
+
 	pose    ：四元数，其本地坐标系的定义如下图
+
 	![image](1.jpg)
 	
 (3) 问检测到支持的物体：
+
 	输出[-1., 0., 0., 0., 0., 0., 0., 0.]
 					  
 ### 相机坐标系定义
@@ -59,11 +66,17 @@ topic: 'aimo/rgbd_obj_cls_pose'
 
 
 ## 开始
+
 (1) 连接奥比中光rgbd相机到nx
+
 (2) 启动roscore
+
 (3) 启动服务
+
 ./start_rgbd_cam_server.sh
+
 (4) 启动节点
+
 ./start_rgbd_cam_node.sh
    
 
